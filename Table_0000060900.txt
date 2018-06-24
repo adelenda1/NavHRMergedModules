@@ -1,0 +1,47 @@
+OBJECT Table 60900 Master Menu
+{
+  OBJECT-PROPERTIES
+  {
+    Date=21-06-18;
+    Time=09:50:10;
+    Modified=Yes;
+    Version List=HR;
+  }
+  PROPERTIES
+  {
+    DataPerCompany=No;
+  }
+  FIELDS
+  {
+    { 1   ;   ;Assisted Page ID    ;Integer       ;CaptionML=ENU=Page ID }
+    { 2   ;   ;Name                ;Text250       ;CaptionML=ENU=Name }
+    { 3   ;   ;Order               ;Integer       ;CaptionML=ENU=Order }
+    { 4   ;   ;Document Type       ;Text250        }
+    { 5   ;   ;Visible             ;Boolean       ;CaptionML=ENU=Visible }
+    { 6   ;   ;Module Area         ;Option        ;OptionCaptionML=ENU=Welfare,Leave,Disciplinary Action,Training,Time,Appraisal,Grievance,Personnel,Talent;
+                                                   OptionString=Welfare,Leave,Disciplinary Action,Training,Time,Appraisal,Grievance,Personnel,Talent }
+    { 7   ;   ;Functional Area     ;Option        ;OptionCaptionML=ENU=Setup,Approval,Posted;
+                                                   OptionString=Setup,Approval,Posted }
+    { 8   ;   ;Approved Status     ;Option        ;OptionCaptionML=ENU=" ,Requested,Approved";
+                                                   OptionString=[ ,Requested,Approved] }
+    { 9   ;   ;Posted              ;Boolean        }
+    { 10  ;   ;Active              ;Boolean        }
+    { 11  ;   ;Cancelled           ;Boolean        }
+    { 12  ;   ;Blocked             ;Boolean        }
+  }
+  KEYS
+  {
+    {    ;Assisted Page ID,Name                   ;Clustered=Yes }
+    {    ;Order                                    }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
